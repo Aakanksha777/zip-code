@@ -2,6 +2,7 @@
   "name": "zip-code",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aakanksha777.github.io/zip-code",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
