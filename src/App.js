@@ -22,7 +22,7 @@ function App() {
       setLocationData(data);
     } catch (error) {
       console.error("Error in API", error);
-      if (error === "404") setError(true);
+      setError(true);
     }
     setLoading(false);
   };
@@ -48,7 +48,6 @@ function App() {
           locationData={locationData}
           handleInput={(e) => setInputValue(e.target.value)}
           handleSelect={(e) => setCountryCode(e.target.value)}
-          handleOptions={(e) => setCountryCode(e.target.value)}
         />
       </div>
       <div className="list">
