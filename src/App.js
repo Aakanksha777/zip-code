@@ -28,7 +28,7 @@ function App() {
   };
 
   const handleClear = () => {
-    setLocationData(null);
+    setLocationData({});
     setInputValue("");
   };
 
@@ -44,15 +44,16 @@ function App() {
           fetchPlaces={handleLocation}
           countryCode={countryCode}
           inputValue={inputValue}
+          handleClear={handleClear}
+          locationData={locationData}
           handleInput={(e) => setInputValue(e.target.value)}
           handleSelect={(e) => setCountryCode(e.target.value)}
           handleOptions={(e) => setCountryCode(e.target.value)}
         />
       </div>
-      <div>
+      <div className="list">
         <LocationInfo
           locationData={locationData}
-          handleClear={handleClear}
           loading={loading}
           error={error}
         />

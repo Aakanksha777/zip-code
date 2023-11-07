@@ -7,6 +7,8 @@ const PostalCodeInput = ({
   inputValue,
   handleInput,
   handleSelect,
+  locationData,
+  handleClear
 }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +21,6 @@ const PostalCodeInput = ({
         <option value="IN">India</option>
         <option value="JP">Japan</option>
       </select>
-
       <input
         placeholder="Enter code"
         value={inputValue}
@@ -30,6 +31,7 @@ const PostalCodeInput = ({
       <button onClick={handleSubmit} className="postal postal-btn">
         Check
       </button>
+      {locationData.places && <button onClick={handleClear} className="postal postal-btn clear-btn">Clear</button>}
     </div>
   );
 };

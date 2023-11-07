@@ -1,13 +1,9 @@
 * {
   margin: 0;
   padding: 0;
- 
+
 }
-/* 
-.App {
-  background-color: lightgrey;
-  height: 100vh;
-} */
+
 
 .header {
   text-align: center;
@@ -15,7 +11,7 @@
 }
 
 .main {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: teal;
   margin: 0.8em;
 }
@@ -23,4 +19,9 @@
 .text {
   font-size: 18px;
   color: rgb(126, 124, 124);
+}
+
+.list {
+  max-height: calc(100vh - 250px);
+  overflow: hidden;
 }

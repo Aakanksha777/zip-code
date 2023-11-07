@@ -11,13 +11,17 @@
 }
 
 .postal-input {
-    /* background-color: lightgrey; */
     border: 1px solid darkgray;
 }
+
 
 .postal-btn {
     background-color: darkcyan;
     border: none;
     color: lightgray;
 
+}
+
+.clear-btn {
+    background-color: red;
 }
