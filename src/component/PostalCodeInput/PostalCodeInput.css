@@ -1,0 +1,23 @@
+.postalCode-container {
+    margin: 0.5em;
+    padding: 1em;
+    text-align: center;
+}
+
+.postal {
+    padding: 0.8em;
+    margin: 0.5em;
+    border-radius: 5px;
+}
+
+.postal-input {
+    /* background-color: lightgrey; */
+    border: 1px solid darkgray;
+}
+
+.postal-btn {
+    background-color: darkcyan;
+    border: none;
+    color: lightgray;
+
+}

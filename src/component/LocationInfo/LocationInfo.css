@@ -1,0 +1,18 @@
+.location-container {
+display: flex;
+justify-content: space-around;    
+}
+
+.loader-container, .catch-error  {
+    text-align: center;
+}
+
+
+.location {
+    /* background-color: lightgray; */
+    /* border: 1px solid black; */
+    /* width: 300px; */
+    margin: 2em;
+    border-radius: 10px;
+    padding: 0.8em;
+}
