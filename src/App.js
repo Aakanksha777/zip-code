@@ -21,6 +21,7 @@ function App() {
       const data = await response.json();
       setLocationData(data);
     } catch (error) {
+      setLocationData({});
       console.error("Error in API", error);
       setError(true);
     }
