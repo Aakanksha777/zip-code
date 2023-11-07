@@ -2,20 +2,20 @@ import React from "react";
 import "./PostalCodeInput.css";
 
 const PostalCodeInput = ({
-  userPostalCode,
+  fetchPlaces,
   countryCode,
   inputValue,
-  setInputValue,
-  handleOptions,
+  handleInput,
+  handleSelect,
 }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    userPostalCode(countryCode, inputValue);
+    fetchPlaces(countryCode, inputValue);
   };
 
   return (
     <div className="postalCode-container">
-      <select onChange={handleOptions}>
+      <select onChange={handleSelect}>
         <option value="IN">India</option>
         <option value="JP">Japan</option>
       </select>
@@ -23,7 +23,7 @@ const PostalCodeInput = ({
       <input
         placeholder="Enter code"
         value={inputValue}
-        onChange={(e) => setInputValue(e.target.value)}
+        onChange={handleInput}
         className="postal postal-input"
         required={true}
       />
